@@ -117,7 +117,7 @@ extension FinEduViewController{
         var fbFrame = vFacebookViewDetail.frame;
         let screenSize: CGRect = UIScreen.main.bounds
         fbFrame.origin.x = screenSize.width - fbFrame.width;
-        UIView.animate(withDuration: 0.3, delay:0.0, options:.curveEaseOut, animations: { self.vFacebookViewDetail.frame = fbFrame; },  completion: { finished in
+        UIView.animate(withDuration: 1.2, delay:0.0, options:.curveEaseOut, animations: { self.vFacebookViewDetail.frame = fbFrame; },  completion: { finished in
             
         });
     }
@@ -127,7 +127,7 @@ extension FinEduViewController{
         vFacebookView.isHidden = true
         var fbFrame = vFacebookViewDetail.frame;
         fbFrame.origin.x = vFacebookView.frame.origin.x;
-        UIView.animate(withDuration: 0.3, delay:0.0, options:.curveEaseOut, animations: { self.vFacebookViewDetail.frame = fbFrame; },  completion: { finished in
+        UIView.animate(withDuration: 1.2, delay:0.0, options:.curveEaseOut, animations: { self.vFacebookViewDetail.frame = fbFrame; },  completion: { finished in
             self.vFacebookView.isHidden = false
             self.vFacebookViewDetail.isHidden = true
         });
@@ -145,7 +145,7 @@ extension FinEduViewController{
         var cuFrame = vContactUsViewDetail.frame;
         let screenSize: CGRect = UIScreen.main.bounds
         cuFrame.origin.x = screenSize.width - cuFrame.width;
-        UIView.animate(withDuration: 0.3, delay:0.0, options:.curveEaseOut, animations: { self.vContactUsViewDetail.frame = cuFrame; },  completion: { finished in
+        UIView.animate(withDuration: 1.2, delay:0.0, options:.curveEaseOut, animations: { self.vContactUsViewDetail.frame = cuFrame; },  completion: { finished in
             
         });
     }
@@ -155,7 +155,7 @@ extension FinEduViewController{
         vContactUsView.isHidden = true
         var fbFrame = vContactUsViewDetail.frame;
         fbFrame.origin.x = vContactUsView.frame.origin.x;
-        UIView.animate(withDuration: 0.3, delay:0.0, options:.curveEaseOut, animations: { self.vContactUsViewDetail.frame = fbFrame; },  completion: { finished in
+        UIView.animate(withDuration: 1.2, delay:0.0, options:.curveEaseOut, animations: { self.vContactUsViewDetail.frame = fbFrame; },  completion: { finished in
             self.vContactUsView.isHidden = false
             self.vContactUsViewDetail.isHidden = true
         });

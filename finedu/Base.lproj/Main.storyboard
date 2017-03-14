@@ -111,10 +111,13 @@
                                 <rect key="frame" x="319" y="457" width="55" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="facebook" id="3Zc-gg-HhX">
+                                        <rect key="frame" x="18" y="15" width="19" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eey-P1-BQc">
                                         <rect key="frame" x="4" y="-3" width="46" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="didFbShowViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="MOX-Jq-rT2"/>
                                         </connections>
@@ -126,33 +129,39 @@
                                 <rect key="frame" x="319" y="457" width="240" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ugy-hZ-iHQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="59" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="didFbHideViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="xJZ-FG-0xM"/>
-                                        </connections>
-                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="facebook" id="OT1-pE-36D">
+                                        <rect key="frame" x="18" y="15" width="19" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zIn-yg-LGX">
-                                        <rect key="frame" x="67" y="15" width="126" height="30"/>
+                                        <rect key="frame" x="67" y="0.0" width="80" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Facebook"/>
                                         <connections>
                                             <action selector="didFbTextViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="WJg-mK-O6B"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ugy-hZ-iHQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="didFbHideViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="xJZ-FG-0xM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.71764705880000002" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="Xza-CO-RAP">
                                 <rect key="frame" x="319" y="521" width="55" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="contact_us" id="ea6-z8-INu">
+                                        <rect key="frame" x="13" y="18" width="32" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WQr-Jr-JvN">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="didCuShowViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="Tdc-2x-eFP"/>
                                         </connections>
@@ -164,24 +173,27 @@
                                 <rect key="frame" x="319" y="521" width="240" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o0W-iv-s0T">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="didCuHideViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="zn7-ft-ze1"/>
-                                        </connections>
-                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="contact_us" id="wMm-WD-rk3">
+                                        <rect key="frame" x="13" y="18" width="32" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZSO-S3-rpA">
-                                        <rect key="frame" x="63" y="0.0" width="102" height="59"/>
+                                        <rect key="frame" x="67" y="0.0" width="80" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Contact Us"/>
                                         <connections>
                                             <action selector="didCuTextViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="b42-g3-KBo"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o0W-iv-s0T">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="didCuHideViewDetailTap:" destination="gjb-cV-ex8" eventType="touchUpInside" id="zn7-ft-ze1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.50196078431372548" green="0.71764705882352942" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -328,9 +340,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AboutUs" width="70" height="70"/>
+        <image name="AboutUs" width="100" height="100"/>
         <image name="Home" width="70" height="70"/>
-        <image name="Videos" width="70" height="70"/>
+        <image name="Videos" width="100" height="100"/>
+        <image name="contact_us" width="55" height="39"/>
+        <image name="facebook" width="33" height="62"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
