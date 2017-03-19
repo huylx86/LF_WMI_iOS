@@ -6,9 +6,9 @@ class FinEduPageViewController: UIPageViewController {
     
     fileprivate(set) lazy var orderedViewControllers: [UIViewController] = {
         // The view controllers will be shown in this order
-        return [self.newColoredViewController("Home"),
-            self.newColoredViewController("Videos"),
-            self.newColoredViewController("AboutUs")]
+        return [self.newFinEduViewController("Home"),
+            self.newFinEduViewController("Videos"),
+            self.newFinEduViewController("AboutUs")]
     }()
     
     override func viewDidLoad() {
@@ -51,7 +51,7 @@ class FinEduPageViewController: UIPageViewController {
         }
     }
     
-    fileprivate func newColoredViewController(_ screen: String) -> UIViewController {
+    fileprivate func newFinEduViewController(_ screen: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil) .
             instantiateViewController(withIdentifier: "\(screen)ViewController")
     }

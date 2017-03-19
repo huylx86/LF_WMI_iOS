@@ -1,15 +1,6 @@
-//
-//  iOSDevCenters+GIF.swift
-//  GIF-Swift
-//
-//  Created by iOSDevCenters on 11/12/15.
-//  Copyright © 2016 iOSDevCenters. All rights reserved.
-//
-
 import UIKit
 import ImageIO
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
+
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   switch (lhs, rhs) {
   case let (l?, r?):
@@ -35,12 +26,12 @@ extension UIImage {
     }
     
     public class func gifImageWithURL(_ gifUrl:String) -> UIImage? {
-        guard let bundleURL:URL? = URL(string: gifUrl)
+        guard let bundleURL:URL = URL(string: gifUrl)
             else {
                 print("image named \"\(gifUrl)\" doesn't exist")
                 return nil
         }
-        guard let imageData = try? Data(contentsOf: bundleURL!) else {
+        guard let imageData = try? Data(contentsOf: bundleURL) else {
             print("image named \"\(gifUrl)\" into NSData")
             return nil
         }

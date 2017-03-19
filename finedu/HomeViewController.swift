@@ -21,7 +21,7 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
         let requestObj = NSURLRequest(url: url! as URL);
         webView.delegate = self
         webView.loadRequest(requestObj as URLRequest);
-        progressBar.image = UIImage.gifImageWithName("loading_")
+        progressBar.image = UIImage.gifImageWithName("loading")
     
     }
     
