@@ -16,7 +16,7 @@ class VideosViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL (string: "http://wmi.learnflux.net/video/");//http://inkstudiowp.16mb.com/wmi/video/
+        let url = NSURL (string: "http://finedu.wmi.com.sg/video/");
         let requestObj = NSURLRequest(url: url! as URL);
         webView.delegate = self
         webView.loadRequest(requestObj as URLRequest);

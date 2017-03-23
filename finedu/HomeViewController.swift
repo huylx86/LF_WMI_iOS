@@ -16,7 +16,7 @@ class HomeViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL (string: "http://wmi.learnflux.net/mobile/");//http://inkstudiowp.16mb.com/wmi/mobile/
+        let url = NSURL (string: "http://finedu.wmi.com.sg/mobile/");
 
         let requestObj = NSURLRequest(url: url! as URL);
         webView.delegate = self

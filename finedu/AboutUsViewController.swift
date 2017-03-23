@@ -17,7 +17,7 @@ class AboutUsViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL (string: "http://wmi.learnflux.net/credits/");//http://inkstudiowp.16mb.com/wmi/credits/
+        let url = NSURL (string: "http://finedu.wmi.com.sg/credits/");
         let requestObj = NSURLRequest(url: url! as URL);
         webView.delegate = self
         webView.loadRequest(requestObj as URLRequest);
