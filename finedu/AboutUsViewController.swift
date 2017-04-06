@@ -119,7 +119,7 @@ class AboutUsViewController: UIViewController {
         }
         
         let url = NSURL(string: strUrl)
-        UIApplication.shared.open(url as! URL, options: [:], completionHandler: nil)
+        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
     }
     
     /*func webViewDidStartLoad(_ webView: UIWebView) {
