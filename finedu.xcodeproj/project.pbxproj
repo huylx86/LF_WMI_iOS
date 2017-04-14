@@ -19,6 +19,7 @@
 		1136A70D1E78552100B97FE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136A70C1E78552100B97FE0 /* QuartzCore.framework */; };
 		1159FFB01E7D822A00511F95 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1159FFAF1E7D822A00511F95 /* loading.gif */; };
 		11662A531E7708AB00440972 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11662A521E7708AB00440972 /* iOSDevCenters+GIF.swift */; };
+		7B565EF4A7B96620669F084B /* Pods_finedu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D230454B328840E819D2C5 /* Pods_finedu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		1136A70C1E78552100B97FE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1159FFAF1E7D822A00511F95 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		11662A521E7708AB00440972 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		2AA202AD711B06DECD532309 /* Pods-finedu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finedu.release.xcconfig"; path = "Pods/Target Support Files/Pods-finedu/Pods-finedu.release.xcconfig"; sourceTree = "<group>"; };
+		CCA05514BE01B052F539AB7A /* Pods-finedu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finedu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-finedu/Pods-finedu.debug.xcconfig"; sourceTree = "<group>"; };
+		F2D230454B328840E819D2C5 /* Pods_finedu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finedu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1136A70D1E78552100B97FE0 /* QuartzCore.framework in Frameworks */,
+				7B565EF4A7B96620669F084B /* Pods_finedu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 				112F30E81E75483E00D31EA8 /* finedu */,
 				112F30E71E75483E00D31EA8 /* Products */,
 				1136A70B1E78552100B97FE0 /* Frameworks */,
+				A2A1672A892BAA8DEA2B7B0C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +96,18 @@
 			isa = PBXGroup;
 			children = (
 				1136A70C1E78552100B97FE0 /* QuartzCore.framework */,
+				F2D230454B328840E819D2C5 /* Pods_finedu.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2A1672A892BAA8DEA2B7B0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCA05514BE01B052F539AB7A /* Pods-finedu.debug.xcconfig */,
+				2AA202AD711B06DECD532309 /* Pods-finedu.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 112F30F81E75483E00D31EA8 /* Build configuration list for PBXNativeTarget "finedu" */;
 			buildPhases = (
+				A817ED7F043CBCF590E0385D /* [CP] Check Pods Manifest.lock */,
 				112F30E21E75483E00D31EA8 /* Sources */,
 				112F30E31E75483E00D31EA8 /* Frameworks */,
 				112F30E41E75483E00D31EA8 /* Resources */,
+				D79ACF3FD4F40FCA19B0C948 /* [CP] Embed Pods Frameworks */,
+				A3F97A60A9F4D27429C23595 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +181,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3F97A60A9F4D27429C23595 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-finedu/Pods-finedu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A817ED7F043CBCF590E0385D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D79ACF3FD4F40FCA19B0C948 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-finedu/Pods-finedu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		112F30E21E75483E00D31EA8 /* Sources */ = {
@@ -293,6 +360,7 @@
 		};
 		112F30F91E75483E00D31EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA05514BE01B052F539AB7A /* Pods-finedu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = DX55GF66M8;
@@ -308,6 +376,7 @@
 		};
 		112F30FA1E75483E00D31EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA202AD711B06DECD532309 /* Pods-finedu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = DX55GF66M8;

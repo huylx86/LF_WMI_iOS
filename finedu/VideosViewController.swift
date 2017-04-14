@@ -7,27 +7,38 @@
 //
 
 import UIKit
+import YouTubePlayer
 
 class VideosViewController: UIViewController, UIWebViewDelegate {
     
-    @IBOutlet weak var webView : UIWebView!
-    @IBOutlet weak var progressBar : UIImageView!
+//    @IBOutlet weak var webView : UIWebView!
+//    @IBOutlet weak var progressBar : UIImageView!
+    @IBOutlet var playerView: YouTubePlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL (string: "http://finedu.wmi.com.sg/video/");
-        let requestObj = NSURLRequest(url: url! as URL);
-        webView.delegate = self
-        webView.loadRequest(requestObj as URLRequest);
-        progressBar.image = UIImage.gifImageWithName("loading")
+        initPlayer()
+//        let url = NSURL (string: "http://finedu.wmi.com.sg/video/");
+//        let requestObj = NSURLRequest(url: url! as URL);
+//        webView.delegate = self
+//        webView.loadRequest(requestObj as URLRequest);
+//        progressBar.image = UIImage.gifImageWithName("loading")
     }
     
-    func webViewDidStartLoad(_ webView: UIWebView) {
-        progressBar.isHidden = false
-        
+    func initPlayer() {
+        playerView.playerVars = [
+            "playsinline": "1" as AnyObject,
+            "controls": "1" as AnyObject,
+            "showinfo": "1" as AnyObject
+        ]
+        playerView.loadVideoID("5xBg18TMiLs")
     }
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        progressBar.isHidden = true
-    }
+//    func webViewDidStartLoad(_ webView: UIWebView) {
+//        progressBar.isHidden = false
+//        
+//    }
+//    func webViewDidFinishLoad(_ webView: UIWebView) {
+//        progressBar.isHidden = true
+//    }
 }
