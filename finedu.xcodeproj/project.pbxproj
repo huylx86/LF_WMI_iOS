@@ -16,6 +16,8 @@
 		112F31081E759E4D00D31EA8 /* FinEduPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F31031E759E4D00D31EA8 /* FinEduPageViewController.swift */; };
 		112F31091E759E4D00D31EA8 /* FinEduViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F31041E759E4D00D31EA8 /* FinEduViewController.swift */; };
 		112F310A1E759E4D00D31EA8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112F31051E759E4D00D31EA8 /* VideosViewController.swift */; };
+		11342DCE1EA25E030048A01A /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11342DCD1EA25E030048A01A /* CommonUtils.swift */; };
+		11342DD11EA2730E0048A01A /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11342DD01EA2730E0048A01A /* VideoModel.swift */; };
 		1136A70D1E78552100B97FE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1136A70C1E78552100B97FE0 /* QuartzCore.framework */; };
 		1159FFB01E7D822A00511F95 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1159FFAF1E7D822A00511F95 /* loading.gif */; };
 		11662A531E7708AB00440972 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11662A521E7708AB00440972 /* iOSDevCenters+GIF.swift */; };
@@ -34,6 +36,8 @@
 		112F31031E759E4D00D31EA8 /* FinEduPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinEduPageViewController.swift; sourceTree = "<group>"; };
 		112F31041E759E4D00D31EA8 /* FinEduViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinEduViewController.swift; sourceTree = "<group>"; };
 		112F31051E759E4D00D31EA8 /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		11342DCD1EA25E030048A01A /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		11342DD01EA2730E0048A01A /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		1136A70C1E78552100B97FE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1159FFAF1E7D822A00511F95 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		11662A521E7708AB00440972 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				112F30F01E75483E00D31EA8 /* Assets.xcassets */,
 				112F30F21E75483E00D31EA8 /* LaunchScreen.storyboard */,
 				112F30F51E75483E00D31EA8 /* Info.plist */,
+				11342DCD1EA25E030048A01A /* CommonUtils.swift */,
+				11342DD01EA2730E0048A01A /* VideoModel.swift */,
 			);
 			path = finedu;
 			sourceTree = "<group>";
@@ -239,8 +245,10 @@
 				112F31091E759E4D00D31EA8 /* FinEduViewController.swift in Sources */,
 				112F31081E759E4D00D31EA8 /* FinEduPageViewController.swift in Sources */,
 				11662A531E7708AB00440972 /* iOSDevCenters+GIF.swift in Sources */,
+				11342DD11EA2730E0048A01A /* VideoModel.swift in Sources */,
 				112F30EA1E75483E00D31EA8 /* AppDelegate.swift in Sources */,
 				112F310A1E759E4D00D31EA8 /* VideosViewController.swift in Sources */,
+				11342DCE1EA25E030048A01A /* CommonUtils.swift in Sources */,
 				112F31061E759E4D00D31EA8 /* AboutUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

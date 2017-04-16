@@ -35,16 +35,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textTitle1.font = updateTextFont(textView: textTitle1);
-        textContent1.font = updateTextFont(textView: textContent1);
-        textTitle2.font = updateTextFont(textView: textTitle2);
-        textContent2.font = updateTextFont(textView: textContent2);
-        textTitle3.font = updateTextFont(textView: textTitle3);
-        textContent3.font = updateTextFont(textView: textContent3);
-        textTitle4.font = updateTextFont(textView: textTitle4);
-        textContent4.font = updateTextFont(textView: textContent4);
-        textTitle5.font = updateTextFont(textView: textTitle5);
-        textContent5.font = updateTextFont(textView: textContent5);
+        textTitle1.font = CommonUtils.sharedInstance.updateTextFont(textView: textTitle1, fontMinSize: 12);
+        textContent1.font = CommonUtils.sharedInstance.updateTextFont(textView: textContent1, fontMinSize: 12);
+        textTitle2.font = CommonUtils.sharedInstance.updateTextFont(textView: textTitle2, fontMinSize: 12);
+        textContent2.font = CommonUtils.sharedInstance.updateTextFont(textView: textContent2, fontMinSize: 12);
+        textTitle3.font = CommonUtils.sharedInstance.updateTextFont(textView: textTitle3, fontMinSize: 12);
+        textContent3.font = CommonUtils.sharedInstance.updateTextFont(textView: textContent3, fontMinSize: 12);
+        textTitle4.font = CommonUtils.sharedInstance.updateTextFont(textView: textTitle4, fontMinSize: 12);
+        textContent4.font = CommonUtils.sharedInstance.updateTextFont(textView: textContent4, fontMinSize: 12);
+        textTitle5.font = CommonUtils.sharedInstance.updateTextFont(textView: textTitle5, fontMinSize: 12);
+        textContent5.font = CommonUtils.sharedInstance.updateTextFont(textView: textContent5, fontMinSize: 12);
         
         adjustView();
         scrollview.contentSize.height = view5.frame.height + view5.frame.origin.y + 24;
@@ -67,17 +67,17 @@ class HomeViewController: UIViewController {
         progressBar.isHidden = true
     }*/
     
-    func updateTextFont(textView : UITextView) -> UIFont {
-        var fontSize = textView.font?.pointSize;
-        let minSize : CGFloat = 12;
-        var size : CGSize = textView.sizeThatFits(CGSize(width: textView.frame.width, height: 10000));
-        while (fontSize! > minSize &&  size.height >= textView.frame.size.height ) {
-            fontSize = fontSize! - 1.0;
-            textView.font = UIFont(name: (textView.font?.fontName)!, size: fontSize!)
-            size = textView.sizeThatFits(CGSize(width: textView.frame.width, height: 10000));
-        }
-        return textView.font!;
-    }
+//    func updateTextFont(textView : UITextView) -> UIFont {
+//        var fontSize = textView.font?.pointSize;
+//        let minSize : CGFloat = 12;
+//        var size : CGSize = textView.sizeThatFits(CGSize(width: textView.frame.width, height: 10000));
+//        while (fontSize! > minSize &&  size.height >= textView.frame.size.height ) {
+//            fontSize = fontSize! - 1.0;
+//            textView.font = UIFont(name: (textView.font?.fontName)!, size: fontSize!)
+//            size = textView.sizeThatFits(CGSize(width: textView.frame.width, height: 10000));
+//        }
+//        return textView.font!;
+//    }
     
     func adjustView() {
         
