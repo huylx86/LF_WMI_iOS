@@ -12,7 +12,7 @@ import YouTubePlayer
 
 class VideoTableViewCell: UITableViewCell {
     @IBOutlet weak var itemTitle : UILabel!
-    @IBOutlet weak var itemDes: UITextView!
+    @IBOutlet weak var itemDes: UILabel!
     @IBOutlet weak var itemImage : UIImageView!
 }
 
@@ -113,7 +113,7 @@ class VideosViewController: UIViewController, UIWebViewDelegate {
         video3 = VideoModel()
         video3.index = 2
         video3.image = "Home_3"
-        video3.title = "What Are Bonds"
+        video3.title = "What Are Bonds?"
         video3.shortDescription = "This video offers an essential coverage on the fundamentals of..."
         video3.fullDescription = "This video offers an essential coverage on the fundamentals of bonds and provides foundational knowledge of bond investments to a new investor."
         video3.linkFull = "https://www.youtube.com/watch?v=h8fe7P0X3sA"
@@ -158,7 +158,7 @@ class VideosViewController: UIViewController, UIWebViewDelegate {
         viewVideoActived.frame = CGRect(x:viewVideoActived.frame.origin.x, y:viewVideoActived.frame.origin.y, width: viewVideoActived.frame.width, height:videoDescription.frame.origin.y + videoDescription.frame.height)
         btnShareThis.frame = CGRect(x:btnShareThis.frame.origin.x, y:viewVideoActived.frame.origin.y + viewVideoActived.frame.height, width:btnShareThis.frame.width, height:btnShareThis.frame.height)
         setLinkId(id: videoActived.linkId)
-        viewVideoTableView.frame = CGRect(x:viewVideoTableView.frame.origin.x,y:btnShareThis.frame.origin.y + btnShareThis.frame.height,width:viewVideoTableView.frame.width, height:355)
+        viewVideoTableView.frame = CGRect(x:viewVideoTableView.frame.origin.x,y:btnShareThis.frame.origin.y + btnShareThis.frame.height,width:viewVideoTableView.frame.width, height:365)
         
         scrollView.contentSize.height = viewVideoTableView.frame.origin.y + viewVideoTableView.frame.height
     }
@@ -176,7 +176,7 @@ extension VideosViewController {
         let text = videoActived.linkFull
         
         let textToShare = [ text ]
-        let activityViewController = UIActivityViewController(activityItems: [textToShare as Any], applicationActivities: nil)
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         
         activityViewController.excludedActivityTypes = [ UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.assignToContact, UIActivityType.saveToCameraRoll]
@@ -230,9 +230,9 @@ extension VideosViewController : UITableViewDataSource
         
         let item : VideoModel = lstOtherVideoNextComingActived[indexPath.row]
         cell.itemTitle?.text = item.title
-        cell.itemDes?.text = item.shortDescription
+        cell.itemDes?.text = item.fullDescription
         cell.itemImage?.image = UIImage(named: item.image)
-        cell.itemDes.font = CommonUtils.sharedInstance.updateTextFont(textView: cell.itemDes, fontMinSize: 10)
+//        cell.itemDes.font = CommonUtils.sharedInstance.updateTextFont(textView: cell.itemDes, fontMinSize: 10)
         
         return cell
     }
