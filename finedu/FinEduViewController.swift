@@ -60,18 +60,32 @@ class FinEduViewController: UIViewController {
         vIndicatorHome.isHidden = false
         vIndicatorVideos.isHidden = true
         vIndicatorAboutUs.isHidden = true
+        
+        hidePhoneDetail()
+        hideFacebookDetail()
+        hideContactUsDetail()
     }
     
     func didVideosActive(){
         vIndicatorHome.isHidden = true
         vIndicatorVideos.isHidden = false
         vIndicatorAboutUs.isHidden = true
+        
+        hideFacebook()
+        hideContact()
+        hidePhone()
+
     }
     
     func didAboutUsActive(){
         vIndicatorHome.isHidden = true
         vIndicatorVideos.isHidden = true
         vIndicatorAboutUs.isHidden = false
+
+        hidePhoneDetail()
+        hideFacebookDetail()
+        hideContactUsDetail()
+
     }
 }
 
@@ -158,6 +172,30 @@ extension FinEduViewController{
     func openFacebookUrl() {
         let url = NSURL(string: "https://www.facebook.com/WMIsg/photos/a.567627296644102.1073741825.142122185861284/1406339156106241/?type=3&theater")!
         UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+    }
+    
+    func hideContact() {
+        vContactUsView.isHidden = true
+        vContactUsViewDetail.isHidden = true
+        var cuFrame = vContactUsViewDetail.frame;
+        cuFrame.origin.x = vContactUsView.frame.origin.x;
+        self.vContactUsViewDetail.frame = cuFrame
+    }
+    
+    func hideFacebook(){
+        vFacebookViewDetail.isHidden = true
+        vFacebookView.isHidden = true
+        var fbFrame = vFacebookViewDetail.frame;
+        fbFrame.origin.x = vFacebookView.frame.origin.x;
+        self.vFacebookViewDetail.frame = fbFrame;
+    }
+    
+    func hidePhone(){
+        vPhoneViewDetail.isHidden = true
+        vPhoneView.isHidden = true
+        var phoneFrame = vPhoneViewDetail.frame;
+        phoneFrame.origin.x = vContactUsView.frame.origin.x;
+        self.vPhoneViewDetail.frame = phoneFrame;
     }
     
     func showContactUsDetail(){

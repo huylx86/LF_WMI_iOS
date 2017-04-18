@@ -175,8 +175,8 @@ extension VideosViewController {
     @IBAction func sendThisClicked(_sender : AnyObject){
         let text = videoActived.linkFull
         
-        let textToShare = [ text ]
-        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+//        let textToShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: [text ?? ""], applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         
         activityViewController.excludedActivityTypes = [ UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.assignToContact, UIActivityType.saveToCameraRoll]
